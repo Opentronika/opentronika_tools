@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import logo from "./assets/opentronika.png";
+const { title } = Astro.props;
 ---
 <header
 		class="py-3 flex justify-between bg-slate-200 h-14 sticky w-full top-0 z-20 dark:bg-slate-800 dark:text-white"
@@ -13,7 +14,7 @@ import logo from "./assets/opentronika.png";
 		</div>
 		<div class="flex w-full justify-center absolute">
 			<a>
-				<div class="text-3xl">LCD Editor Pro</div>
+				<div class="text-3xl">{title}</div>
 			</a>
 		</div>
 		<div class="flex z-30">
