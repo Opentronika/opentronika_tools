@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import logo from "./assets/opentronika.png";
+
+const { project_link = "https://github.com/lutgaru/lcd-editor-pro" } = Astro.props;
 ---
 <div class="h-screen bg-slate-200 dark:bg-gray-800 dark:text-white p-2 shadow-xl">
     <article class=" grid  text-center content-center h-full">
@@ -12,7 +14,7 @@ import logo from "./assets/opentronika.png";
      <h6 class="center-align">
       Made by lutgaru
     </h6>
-    <a href="https://github.com/lutgaru/lcd-editor-pro" target="_blank" class=" flex place-content-center items-center">
+    <a href={project_link} target="_blank" class=" flex place-content-center items-center">
       <i class="pi pi-github text-2xl"></i>
       <span class=" p-2">Github</span>
     </a>
